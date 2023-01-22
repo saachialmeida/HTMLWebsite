@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif; margin: 0;}
+.mySlides {
+    display: none;
+    height: 10px
+}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+  max-height: 40px;
+  
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 100px;
+  
+  margin-top: 0px;
+ 
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color:black;
+  background-color: #f2f2f2;
+  font-size: 40px;
+  /* padding: 8px 12px; */
+  position: absolute;
+  text-align: center;
+  
+  height: auto;
+  margin-left: 500px;
+  margin-top: 300px;
+  border: 3px solid black;
+  border-radius: 10px;
+}
+.numbertext2{
+    color:white;
+  /* background-color: #f2f2f2; */
+  font-size: 40px;
+  /* padding: 8px 12px; */
+  position: absolute;
+  text-align: center;
+  
+  height: auto;
+  margin-left: 100px;
+  margin-top: 350px;
+  /* border: 3px solid black; */
+  border-radius: 10px;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 500px;
+  width: 15px;
+  margin: 0 2px;
+  /* background-color: #bbb; */
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* .active {
+  background-color: #717171;
+} */
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 4s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+.end{
+    display: flex;
+    background-color: black;
+    align-items: center;
+
+}
+.end li{
+    display: inline-block;
+    color: white;
+    padding-left: 50px;
+    align-items: center;
+    margin-left: 150px;
+}
+
+
+
+
+</style>
+</head>
+<body onload="func1()">
+
+
+
+
+<div class="slideshow-container" >
+
+<div class="mySlides fade" >
+  <div class="numbertext">LIVE VIRTUAL CLASS</div>
+  <img src="./images/tech5.jpeg" style="height:650px;width:100%; " >
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext2" id="secondimage">A class like nothing you've seen before</div>
+  <img src="./images/tech4.jpeg" style="height:650px;width:100%;">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade" >
+  <div class="numbertext"></div>
+  <img src="./images/lap.jpg" style="height: 650px;width:100%">
+  <div class="text"></div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 4000); // Change image every 2 seconds
+}
+
+// function func1()
+// {
+//     window.open("prompt.html", "", "width=200,height=100 ");;
+// }
+</script>
+<section>
+<table>
+    <tr>
+        <td>
+            <img src="./images/img9.jpeg" width="800px" style="margin-left: 50px;margin-top: 150px;">
+
+        </td>
+        
+        <td>
+            <div style="margin-top: 150px;width: 500px;margin-left: 55px;">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+
+                </p>
+            </div>
+        </td>
+    </tr>
+    
+</table>
+<table>
+    <tr>
+        <td>
+            <img src="./images/lap7.jpg" width="400px" style="margin-top: 50px;margin-left: 50px;">
+
+        </td>
+        <td>
+            <img src="./images/tech5.jpeg" width="400px "height="250px" style="margin-top: 50px;margin-left: 50px;">
+        </td>
+        <td>
+            <iframe width="400" height="250" src="https://www.youtube.com/embed/tgbNymZ7vqY" style="margin-top: 50px;margin-left: 50px;"></iframe>
+        </td>
+    </tr>
+</table>
+</section>
+
+    
+<div style="margin-top: 100px;">
+
+</div>
+
+<footer class="end">
+    <ul>
+        <li>Contact</li>
+        <li>Address</li>
+        <li>Feedback</li>
+        <li>Rating</li>
+    </ul>
+</footer>
+
+   
+
+</body>
+</html> 

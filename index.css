@@ -1,0 +1,59 @@
+body{
+    margin: 0;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:black;
+    width: 100%;
+    height: 60px;
+    
+}
+
+
+nav a{
+    color: white;
+    text-decoration: none;
+    transition: 0.5s;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 20px;
+    padding-bottom: 16px;
+}
+nav li {
+   
+    display: inline-block;
+  
+    margin-top: 20px;
+   
+    
+    
+}
+nav a:hover{
+    text-decoration: underline;
+    color: black;
+    background-color: white;
+}
+.button{
+    color: yellow;
+    transition: 1s;
+    padding:10px;
+ 
+}
+.button:hover{
+    background-color:rgba(0, 0, 0, 0.836);
+    color: black;
+    
+}
+nav li:hover{
+    /* background-color:white; */
+    
+}
+
+
+
+
+  
+ 

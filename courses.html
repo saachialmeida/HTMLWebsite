@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        section{
+            height: 800px;
+        }
+        #weekly{
+            border: 1px solid black;
+            height: 800px;
+        }
+        #monthly{
+            height: 800px;
+            border: 1px solid black;
+        }
+        #yearly{
+            height: 800px;
+            border: 1px solid black;
+        }
+    </style>
+    <nav>
+        <ul>
+            <li><a href="#weekly">Weekly Plans</a></li>
+            <li><a href="#monthly" target="iframe1">Monthly Plans</a></li>
+            <li><a href="#yearly" target="iframe1">Yearly Plans</a></li>
+            
+        </ul>
+    
+        
+    </nav>
+
+    <section id="weekly" height="800px">
+        <h1>Weekly</h1>
+        <img src="./images/img.jpeg" height="300px" width="300px">
+        <form name="myform">
+        <div class="head">
+            
+            <select class="form-select" aria-label="Performance" id="select1" name="sel" onchange="func1()"  style="margin-left: 10px;margin-top:10px;width: 400px;height: 30px;">
+                <option selected>References Websites</option>
+                <option value="https://www.google.com/" onchange()>Google</option>
+                <option value="https://www.instagram.com/">Instagram</option>
+                <option value="https://login.yahoo.com/?.src=ym&pspid=159600001&activity=mail-direct&.lang=en-IN&.intl=in&.done=https%3A%2F%2Fin.mail.yahoo.com%2Fd">yahoo</option>
+              </select>
+            </div>
+        </form>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut bibendum nisi egestas suscipit gravida. Sed velit nisl, tristique sed dui mollis, porta tempus ligula. Phasellus vel orci vel arcu pellentesque fermentum. Duis bibendum metus arcu. Aliquam eget tortor vulputate, sollicitudin felis a, mollis libero. Aliquam vitae consequat sapien, id blandit lectus. Integer ac nibh ac nulla tincidunt accumsan sit amet sit amet risus. Integer id nisl urna. In a enim elementum, auctor justo quis, tincidunt augue. Donec nibh dui, congue non neque quis, semper aliquam felis. Praesent efficitur massa vel convallis euismod. Quisque metus lectus, consectetur sit amet justo in, venenatis faucibus nunc. Aenean faucibus, enim id egestas convallis, felis magna mattis est, in ultricies est urna ac nisl.
+    
+            Cras placerat quis tortor quis molestie. Nullam imperdiet gravida velit eget sollicitudin. Nunc dictum pretium justo vel congue. Praesent auctor leo maximus leo aliquam, eget vehicula tortor tincidunt. Vestibulum finibus venenatis dui, nec lobortis mauris convallis id. Maecenas porttitor erat tellus, at vulputate eros euismod a. In aliquam, dolor et bibendum consequat, eros felis ultricies lorem, ac fermentum arcu metus in magna. Integer auctor sapien a massa porta, et suscipit sapien sollicitudin. Maecenas vel hendrerit nibh. Curabitur convallis interdum ornare. Curabitur justo nibh, pretium ac convallis vitae, consectetur sit amet orci. Nunc non enim non ligula efficitur venenatis et at metus. Duis turpis velit, lacinia interdum purus ac, venenatis semper lacus. Aenean mattis fermentum odio ut suscipit.
+            
+            Vestibulum vehicula lobortis diam et pretium. Duis in aliquet tellus. Phasellus tincidunt odio id faucibus malesuada. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer euismod porta nibh sit amet efficitur. Phasellus blandit porta vulputate. Proin placerat efficitur cursus. Fusce blandit tristique urna quis mollis. Duis erat lectus, gravida nec tellus eu, cursus laoreet augue. Maecenas in nisi mauris. In vitae justo posuere, tincidunt neque a, ultrices dui. Sed id bibendum metus. Vestibulum at tincidunt felis, in efficitur libero.
+            
+            Mauris bibendum risus non condimentum gravida. </p>
+    </section>
+    <section id="monthly">
+        <h1>Monthly</h1>
+        <img src="./images/img9.jpeg" height="300px" width="300px">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut bibendum nisi egestas suscipit gravida. Sed velit nisl, tristique sed dui mollis, porta tempus ligula. Phasellus vel orci vel arcu pellentesque fermentum. Duis bibendum metus arcu. Aliquam eget tortor vulputate, sollicitudin felis a, mollis libero. Aliquam vitae consequat sapien, id blandit lectus. Integer ac nibh ac nulla tincidunt accumsan sit amet sit amet risus. Integer id nisl urna. In a enim elementum, auctor justo quis, tincidunt augue. Donec nibh dui, congue non neque quis, semper aliquam felis. Praesent efficitur massa vel convallis euismod. Quisque metus lectus, consectetur sit amet justo in, venenatis faucibus nunc. Aenean faucibus, enim id egestas convallis, felis magna mattis est, in ultricies est urna ac nisl.
+    
+            Cras placerat quis tortor quis molestie. Nullam imperdiet gravida velit eget sollicitudin. Nunc dictum pretium justo vel congue. Praesent auctor leo maximus leo aliquam, eget vehicula tortor tincidunt. Vestibulum finibus venenatis dui, nec lobortis mauris convallis id. Maecenas porttitor erat tellus, at vulputate eros euismod a. In aliquam, dolor et bibendum consequat, eros felis ultricies lorem, ac fermentum arcu metus in magna. Integer auctor sapien a massa porta, et suscipit sapien sollicitudin. Maecenas vel hendrerit nibh. Curabitur convallis interdum ornare. Curabitur justo nibh, pretium ac convallis vitae, consectetur sit amet orci. Nunc non enim non ligula efficitur venenatis et at metus. Duis turpis velit, lacinia interdum purus ac, venenatis semper lacus. Aenean mattis fermentum odio ut suscipit.
+            
+            Vestibulum vehicula lobortis diam et pretium. Duis in aliquet tellus. Phasellus tincidunt odio id faucibus malesuada. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer euismod porta nibh sit amet efficitur. Phasellus blandit porta vulputate. Proin placerat efficitur cursus. Fusce blandit tristique urna quis mollis. Duis erat lectus, gravida nec tellus eu, cursus laoreet augue. Maecenas in nisi mauris. In vitae justo posuere, tincidunt neque a, ultrices dui. Sed id bibendum metus. Vestibulum at tincidunt felis, in efficitur libero.
+            
+            Mauris bibendum risus non condimentum gravida. </p>
+    </section>
+    <section id="yearly">
+        <h1>Yearly</h1>
+        <img src="./images/lap7.jpg" height="300px" width="300px">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut bibendum nisi egestas suscipit gravida. Sed velit nisl, tristique sed dui mollis, porta tempus ligula. Phasellus vel orci vel arcu pellentesque fermentum. Duis bibendum metus arcu. Aliquam eget tortor vulputate, sollicitudin felis a, mollis libero. Aliquam vitae consequat sapien, id blandit lectus. Integer ac nibh ac nulla tincidunt accumsan sit amet sit amet risus. Integer id nisl urna. In a enim elementum, auctor justo quis, tincidunt augue. Donec nibh dui, congue non neque quis, semper aliquam felis. Praesent efficitur massa vel convallis euismod. Quisque metus lectus, consectetur sit amet justo in, venenatis faucibus nunc. Aenean faucibus, enim id egestas convallis, felis magna mattis est, in ultricies est urna ac nisl.
+    
+            Cras placerat quis tortor quis molestie. Nullam imperdiet gravida velit eget sollicitudin. Nunc dictum pretium justo vel congue. Praesent auctor leo maximus leo aliquam, eget vehicula tortor tincidunt. Vestibulum finibus venenatis dui, nec lobortis mauris convallis id. Maecenas porttitor erat tellus, at vulputate eros euismod a. In aliquam, dolor et bibendum consequat, eros felis ultricies lorem, ac fermentum arcu metus in magna. Integer auctor sapien a massa porta, et suscipit sapien sollicitudin. Maecenas vel hendrerit nibh. Curabitur convallis interdum ornare. Curabitur justo nibh, pretium ac convallis vitae, consectetur sit amet orci. Nunc non enim non ligula efficitur venenatis et at metus. Duis turpis velit, lacinia interdum purus ac, venenatis semper lacus. Aenean mattis fermentum odio ut suscipit.
+            
+            Vestibulum vehicula lobortis diam et pretium. Duis in aliquet tellus. Phasellus tincidunt odio id faucibus malesuada. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer euismod porta nibh sit amet efficitur. Phasellus blandit porta vulputate. Proin placerat efficitur cursus. Fusce blandit tristique urna quis mollis. Duis erat lectus, gravida nec tellus eu, cursus laoreet augue. Maecenas in nisi mauris. In vitae justo posuere, tincidunt neque a, ultrices dui. Sed id bibendum metus. Vestibulum at tincidunt felis, in efficitur libero.
+            
+            Mauris bibendum risus non condimentum gravida. </p>
+    </section>
+
+
+    <script>
+        function func1()
+     {
+         window.open(myform.sel.value,"");
+     }
+ </script>
+</body>
+</html>
